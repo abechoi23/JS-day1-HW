@@ -41,3 +41,9 @@ function myFunction(num, i1, i2, d) {
 
 
 console.log(myFunction(87996599994565, 2, 5, 6))
+
+
+const checkDigit = (number, index1, index2, digit) => {
+    members = number.toString().slice(Math.min(index1,index2),Math.max(index1,index2)+1).includes(digit.toString())
+    return members.includes(digit.toString())
+  }
